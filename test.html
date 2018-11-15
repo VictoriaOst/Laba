@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    </head>
+<body>
+   
+  <script>
+    
+    function lab2(n) {
+       var cur, prev = [1], str = '1';
+       for (var i = 1; i <= n; i++) {
+        cur = [1];
+        for (var j = 0; j < prev.length - 1; j++) {
+           cur.push(prev[j] + prev[j + 1]);
+        }
+        cur.push(1);
+        str += '\n' + cur.join(' ');
+        prev = cur;
+       }
+       return str;
+     } 
+    // console.log(lab2(100));
+
+   
+
+
+
+
+  
+
+  
+
+
+    </script>
+
+    
+</body>
+</html>
